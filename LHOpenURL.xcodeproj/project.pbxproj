@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CECD83611A412C0600973211 /* LHOpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECD83601A412C0600973211 /* LHOpenURL.h */; };
+		CECD83631A412C0600973211 /* LHOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83621A412C0600973211 /* LHOpenURL.m */; };
+		CECD83781A412D4100973211 /* LHOpenURLEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83771A412D4100973211 /* LHOpenURLEntity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CECD835B1A412C0600973211 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CECD83611A412C0600973211 /* LHOpenURL.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CECD835D1A412C0600973211 /* libLHOpenURL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLHOpenURL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECD83601A412C0600973211 /* LHOpenURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHOpenURL.h; sourceTree = "<group>"; };
+		CECD83621A412C0600973211 /* LHOpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHOpenURL.m; sourceTree = "<group>"; };
+		CECD83681A412C0700973211 /* LHOpenURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHOpenURLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECD836B1A412C0700973211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECD83761A412D4100973211 /* LHOpenURLEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHOpenURLEntity.h; sourceTree = "<group>"; };
+		CECD83771A412D4100973211 /* LHOpenURLEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHOpenURLEntity.m; sourceTree = "<group>"; };
+		CECD83791A412D9D00973211 /* LHOpenURLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHOpenURLHandler.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECD835A1A412C0600973211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECD83651A412C0700973211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CECD83541A412C0600973211 = {
+			isa = PBXGroup;
+			children = (
+				CECD835F1A412C0600973211 /* LHOpenURL */,
+				CECD83691A412C0700973211 /* LHOpenURLTests */,
+				CECD835E1A412C0600973211 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CECD835E1A412C0600973211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECD835D1A412C0600973211 /* libLHOpenURL.a */,
+				CECD83681A412C0700973211 /* LHOpenURLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECD835F1A412C0600973211 /* LHOpenURL */ = {
+			isa = PBXGroup;
+			children = (
+				CECD83601A412C0600973211 /* LHOpenURL.h */,
+				CECD83621A412C0600973211 /* LHOpenURL.m */,
+				CECD83761A412D4100973211 /* LHOpenURLEntity.h */,
+				CECD83771A412D4100973211 /* LHOpenURLEntity.m */,
+				CECD83791A412D9D00973211 /* LHOpenURLHandler.h */,
+			);
+			path = LHOpenURL;
+			sourceTree = "<group>";
+		};
+		CECD83691A412C0700973211 /* LHOpenURLTests */ = {
+			isa = PBXGroup;
+			children = (
+				CECD836A1A412C0700973211 /* Supporting Files */,
+			);
+			path = LHOpenURLTests;
+			sourceTree = "<group>";
+		};
+		CECD836A1A412C0700973211 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CECD836B1A412C0700973211 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECD835C1A412C0600973211 /* LHOpenURL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECD836E1A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURL" */;
+			buildPhases = (
+				CECD83591A412C0600973211 /* Sources */,
+				CECD835A1A412C0600973211 /* Frameworks */,
+				CECD835B1A412C0600973211 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHOpenURL;
+			productName = LHOpenURL;
+			productReference = CECD835D1A412C0600973211 /* libLHOpenURL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CECD83671A412C0700973211 /* LHOpenURLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECD83711A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURLTests" */;
+			buildPhases = (
+				CECD83641A412C0700973211 /* Sources */,
+				CECD83651A412C0700973211 /* Frameworks */,
+				CECD83661A412C0700973211 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHOpenURLTests;
+			productName = LHOpenURLTests;
+			productReference = CECD83681A412C0700973211 /* LHOpenURLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECD83551A412C0600973211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = huji;
+				TargetAttributes = {
+					CECD835C1A412C0600973211 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					CECD83671A412C0700973211 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CECD83581A412C0600973211 /* Build configuration list for PBXProject "LHOpenURL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CECD83541A412C0600973211;
+			productRefGroup = CECD835E1A412C0600973211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECD835C1A412C0600973211 /* LHOpenURL */,
+				CECD83671A412C0700973211 /* LHOpenURLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECD83661A412C0700973211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECD83591A412C0600973211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECD83781A412D4100973211 /* LHOpenURLEntity.m in Sources */,
+				CECD83631A412C0600973211 /* LHOpenURL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECD83641A412C0700973211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CECD836C1A412C0700973211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CECD836D1A412C0700973211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CECD836F1A412C0700973211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CECD83701A412C0700973211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CECD83721A412C0700973211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LHOpenURLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CECD83731A412C0700973211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LHOpenURLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECD83581A412C0600973211 /* Build configuration list for PBXProject "LHOpenURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECD836C1A412C0700973211 /* Debug */,
+				CECD836D1A412C0700973211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECD836E1A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECD836F1A412C0700973211 /* Debug */,
+				CECD83701A412C0700973211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CECD83711A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECD83721A412C0700973211 /* Debug */,
+				CECD83731A412C0700973211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECD83551A412C0600973211 /* Project object */;
+}
