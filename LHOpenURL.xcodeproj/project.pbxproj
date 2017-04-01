@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6AB49BE71E8F55DC0028EBEC /* LuckyhuTestFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB49BE61E8F55DC0028EBEC /* LuckyhuTestFoo.m */; };
+		6AB49BEA1E8F7CE90028EBEC /* SadhuWww_TestFoo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB49BE91E8F7CE90028EBEC /* SadhuWww_TestFoo2.m */; };
 		CECD83611A412C0600973211 /* LHOpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECD83601A412C0600973211 /* LHOpenURL.h */; };
 		CECD83631A412C0600973211 /* LHOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83621A412C0600973211 /* LHOpenURL.m */; };
 		CECD83781A412D4100973211 /* LHOpenURLEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83771A412D4100973211 /* LHOpenURLEntity.m */; };
@@ -29,6 +30,8 @@
 /* Begin PBXFileReference section */
 		6AB49BE51E8F55DC0028EBEC /* LuckyhuTestFoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckyhuTestFoo.h; sourceTree = "<group>"; };
 		6AB49BE61E8F55DC0028EBEC /* LuckyhuTestFoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyhuTestFoo.m; sourceTree = "<group>"; };
+		6AB49BE81E8F7CE90028EBEC /* SadhuWww_TestFoo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SadhuWww_TestFoo2.h; sourceTree = "<group>"; };
+		6AB49BE91E8F7CE90028EBEC /* SadhuWww_TestFoo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SadhuWww_TestFoo2.m; sourceTree = "<group>"; };
 		CECD835D1A412C0600973211 /* libLHOpenURL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLHOpenURL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD83601A412C0600973211 /* LHOpenURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHOpenURL.h; sourceTree = "<group>"; };
 		CECD83621A412C0600973211 /* LHOpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHOpenURL.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 			children = (
 				6AB49BE51E8F55DC0028EBEC /* LuckyhuTestFoo.h */,
 				6AB49BE61E8F55DC0028EBEC /* LuckyhuTestFoo.m */,
+				6AB49BE81E8F7CE90028EBEC /* SadhuWww_TestFoo2.h */,
+				6AB49BE91E8F7CE90028EBEC /* SadhuWww_TestFoo2.m */,
 			);
 			path = LHOpenURLDemo;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECD83781A412D4100973211 /* LHOpenURLEntity.m in Sources */,
+				6AB49BEA1E8F7CE90028EBEC /* SadhuWww_TestFoo2.m in Sources */,
 				CECD83631A412C0600973211 /* LHOpenURL.m in Sources */,
 				6AB49BE71E8F55DC0028EBEC /* LuckyhuTestFoo.m in Sources */,
 			);

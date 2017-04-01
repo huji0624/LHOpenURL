@@ -18,7 +18,7 @@
      return [ou application:application openURL:[NSURL URLWithString:urlstring] sourceApplication:sourceApplication annotation:annotation];
  }
  
- 2.customize your open url handler class.
+ 2.customize your open url handler class.only host can has '.'.
  //for scheme://apple.boy/patha/pathb?p1=p&p2=q
  @interface SchemeApple_BoyPathaPathbHandler<LHOpenURLHandler>
  @end
