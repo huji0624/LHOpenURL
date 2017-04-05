@@ -26,6 +26,24 @@
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
     return [self application:application openURL:url sourceApplication:nil annotation:nil];
 }
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+    if (!url) {
+        NSLog(@"url is nil.");
+        return NO;
+    }
+    
+    LHOpenURLEntity *entity = [[LHOpenURLEntity alloc] init];
+    entity.url = url;
+    entity.params = [self paramsFromQuery:url];
+    entity.options = options;
+    entity.application = app;
+    entity.sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
+    entity.annotation = options[UIApplicationOpenURLOptionsAnnotationKey];
+    
+    return [self openWithEntity:entity];
+}
+
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     if (!url) {
         NSLog(@"url is nil.");
@@ -38,6 +56,20 @@
     entity.sourceApplication = sourceApplication;
     entity.annotation = annotation;
     entity.params = [self paramsFromQuery:url];
+    NSMutableDictionary<NSString*, id> *options = [NSMutableDictionary dictionary];
+    if (sourceApplication) {
+        [options setObject:sourceApplication forKey:UIApplicationOpenURLOptionsSourceApplicationKey];
+    }
+    if (annotation) {
+        [options setObject:annotation forKey:UIApplicationOpenURLOptionsAnnotationKey];
+    }
+    entity.options = options;
+    
+    return [self openWithEntity:entity];
+}
+
+-(BOOL)openWithEntity:(LHOpenURLEntity*)entity{
+    NSURL *url = entity.url;
     
     __block BOOL customScheme = NO;
     __block BOOL customRes = NO;

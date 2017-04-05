@@ -13,6 +13,7 @@
 @property(nonatomic,weak) NSURL *url;
 @property(nonatomic,weak) NSString *sourceApplication;
 @property(nonatomic,weak) id annotation;
+@property(nonatomic,weak) NSDictionary<NSString*, id> * options;
 
 //data parsed from url query.
 @property(nonatomic,weak) NSDictionary *params;
