@@ -19,25 +19,25 @@ def readFile(path):
 	return content	
 
 def nameToScheme(name):
-	print name
+	name = name.replace("Handler","")
 	uri = ""
 	import re
-	reobj = re.search(r'^([A-Z][a-z0-9_]*)*$',name)
+	reobj = re.findall(r'([A-Z][a-z0-9]*_?)',name)
 	if reobj:
 		i = 0
-		print reobj.groups()
-		for item in reobj.groups():
+		for item in reobj:
 			if i==0:
-				scheme = item
+				scheme = item.lower()
 				uri += scheme
 				uri += "://"
 			elif i==1:
-				host = item
+				host = item.lower()
 				host = host.replace("_",".")
 				uri += host
 			else:
-				uri += "/"
-				path = item
+				if not uri.endswith("."):
+					uri += "/"
+				uri += item.lower()
 			i += 1
 	else:
 		print "the name of the handler is not valide."+name

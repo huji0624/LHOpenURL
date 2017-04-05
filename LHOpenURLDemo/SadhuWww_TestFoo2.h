@@ -12,6 +12,6 @@
 /**
  Here is the SadhuWww_TestFoo2's docment infos.
  */
-@interface SadhuWww_TestFoo2 : NSObject<LHOpenURLHandler>
+@interface SadhuWww_TestFoo2Handler : NSObject<LHOpenURLHandler>
 
 @end

@@ -12,7 +12,7 @@
 /**
  Here is the docment infos.
  */
-@interface LuckyhuTestFoo : NSObject<LHOpenURLHandler>
+@interface LuckyhuTestFooHandler : NSObject<LHOpenURLHandler>
 
 @end
 

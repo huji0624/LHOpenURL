@@ -8,7 +8,7 @@
 
 #import "LuckyhuTestFoo.h"
 
-@implementation LuckyhuTestFoo
+@implementation LuckyhuTestFooHandler
 -(BOOL)handleLHOpenURL:(LHOpenURLEntity *)entity{
     return NO;
 }

@@ -8,7 +8,7 @@
 
 #import "SadhuWww_TestFoo2.h"
 
-@implementation SadhuWww_TestFoo2
+@implementation SadhuWww_TestFoo2Handler
 -(BOOL)handleLHOpenURL:(LHOpenURLEntity *)entity{
     return NO;
 }
