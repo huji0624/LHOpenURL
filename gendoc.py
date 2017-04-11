@@ -48,7 +48,7 @@ args = sys.argv
 out_path = None
 if len(args) == 3:
 	dir_path = args[1]
-	out_path = agrs[2]
+	out_path = args[2]
 elif len(args) == 2:
 	dir_path = args[1]
 else:
