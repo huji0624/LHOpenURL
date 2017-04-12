@@ -38,8 +38,10 @@
     entity.params = [self paramsFromQuery:url];
     entity.options = options;
     entity.application = app;
-    entity.sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
-    entity.annotation = options[UIApplicationOpenURLOptionsAnnotationKey];
+    if ([[UIDevice currentDevice] systemVersion].floatValue >= 9.0) {
+        entity.sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
+        entity.annotation = options[UIApplicationOpenURLOptionsAnnotationKey];
+    }
     
     return [self openWithEntity:entity];
 }
@@ -56,14 +58,16 @@
     entity.sourceApplication = sourceApplication;
     entity.annotation = annotation;
     entity.params = [self paramsFromQuery:url];
-    NSMutableDictionary<NSString*, id> *options = [NSMutableDictionary dictionary];
-    if (sourceApplication) {
-        [options setObject:sourceApplication forKey:UIApplicationOpenURLOptionsSourceApplicationKey];
+    if ([[UIDevice currentDevice] systemVersion].floatValue >= 9.0) {
+        NSMutableDictionary<NSString*, id> *options = [NSMutableDictionary dictionary];
+        if (sourceApplication) {
+            [options setObject:sourceApplication forKey:UIApplicationOpenURLOptionsSourceApplicationKey];
+        }
+        if (annotation) {
+            [options setObject:annotation forKey:UIApplicationOpenURLOptionsAnnotationKey];
+        }
+        entity.options = options;
     }
-    if (annotation) {
-        [options setObject:annotation forKey:UIApplicationOpenURLOptionsAnnotationKey];
-    }
-    entity.options = options;
     
     return [self openWithEntity:entity];
 }

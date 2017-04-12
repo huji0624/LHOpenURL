@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LHOpenURL"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "iOS open url framework.Auto documentGenerate."
   s.homepage     = "https://github.com/huji0624/LHOpenURL"
 
