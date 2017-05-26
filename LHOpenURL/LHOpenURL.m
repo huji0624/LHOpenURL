@@ -75,6 +75,10 @@
 -(BOOL)openWithEntity:(LHOpenURLEntity*)entity{
     NSURL *url = entity.url;
     
+    if (url == nil || [url scheme] == nil || [url host] == nil) {
+        return NO;
+    }
+    
     __block BOOL customScheme = NO;
     __block BOOL customRes = NO;
     [_schemesMap enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
