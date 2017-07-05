@@ -142,7 +142,7 @@
 //    int STA_INQ = 2;
     int state = STA_KEY;
     
-    const int MAX_LEN = 1024;
+    const int MAX_LEN = 10240;
     unichar tmp[MAX_LEN];
     int tmpindex=0;
     
