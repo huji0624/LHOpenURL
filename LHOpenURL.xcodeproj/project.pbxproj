@@ -9,10 +9,22 @@
 /* Begin PBXBuildFile section */
 		6AB49BE71E8F55DC0028EBEC /* LuckyhuTestFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB49BE61E8F55DC0028EBEC /* LuckyhuTestFoo.m */; };
 		6AB49BEA1E8F7CE90028EBEC /* SadhuWww_TestFoo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB49BE91E8F7CE90028EBEC /* SadhuWww_TestFoo2.m */; };
+		6AF6B8AB1F205A500054C471 /* LHOpenURLUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B8AA1F205A500054C471 /* LHOpenURLUnitTest.m */; };
+		6AF6B8AD1F205A500054C471 /* libLHOpenURL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD835D1A412C0600973211 /* libLHOpenURL.a */; };
 		CECD83611A412C0600973211 /* LHOpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECD83601A412C0600973211 /* LHOpenURL.h */; };
 		CECD83631A412C0600973211 /* LHOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83621A412C0600973211 /* LHOpenURL.m */; };
 		CECD83781A412D4100973211 /* LHOpenURLEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD83771A412D4100973211 /* LHOpenURLEntity.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AF6B8AE1F205A500054C471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CECD83551A412C0600973211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CECD835C1A412C0600973211;
+			remoteInfo = LHOpenURL;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CECD835B1A412C0600973211 /* CopyFiles */ = {
@@ -32,25 +44,28 @@
 		6AB49BE61E8F55DC0028EBEC /* LuckyhuTestFoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyhuTestFoo.m; sourceTree = "<group>"; };
 		6AB49BE81E8F7CE90028EBEC /* SadhuWww_TestFoo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SadhuWww_TestFoo2.h; sourceTree = "<group>"; };
 		6AB49BE91E8F7CE90028EBEC /* SadhuWww_TestFoo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SadhuWww_TestFoo2.m; sourceTree = "<group>"; };
+		6AF6B8A81F205A500054C471 /* LHOpenURLUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHOpenURLUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF6B8AA1F205A500054C471 /* LHOpenURLUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHOpenURLUnitTest.m; sourceTree = "<group>"; };
+		6AF6B8AC1F205A500054C471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF6B8B31F205AA60054C471 /* LHOpenURL_UnitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHOpenURL_UnitTest.h; sourceTree = "<group>"; };
 		CECD835D1A412C0600973211 /* libLHOpenURL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLHOpenURL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD83601A412C0600973211 /* LHOpenURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHOpenURL.h; sourceTree = "<group>"; };
 		CECD83621A412C0600973211 /* LHOpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHOpenURL.m; sourceTree = "<group>"; };
-		CECD83681A412C0700973211 /* LHOpenURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHOpenURLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD836B1A412C0700973211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECD83761A412D4100973211 /* LHOpenURLEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHOpenURLEntity.h; sourceTree = "<group>"; };
 		CECD83771A412D4100973211 /* LHOpenURLEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHOpenURLEntity.m; sourceTree = "<group>"; };
 		CECD83791A412D9D00973211 /* LHOpenURLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHOpenURLHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CECD835A1A412C0600973211 /* Frameworks */ = {
+		6AF6B8A51F205A500054C471 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF6B8AD1F205A500054C471 /* libLHOpenURL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECD83651A412C0700973211 /* Frameworks */ = {
+		CECD835A1A412C0600973211 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,12 +86,22 @@
 			path = LHOpenURLDemo;
 			sourceTree = "<group>";
 		};
+		6AF6B8A91F205A500054C471 /* LHOpenURLUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				6AF6B8AA1F205A500054C471 /* LHOpenURLUnitTest.m */,
+				6AF6B8AC1F205A500054C471 /* Info.plist */,
+				6AF6B8B31F205AA60054C471 /* LHOpenURL_UnitTest.h */,
+			);
+			path = LHOpenURLUnitTest;
+			sourceTree = "<group>";
+		};
 		CECD83541A412C0600973211 = {
 			isa = PBXGroup;
 			children = (
 				6AB49BE41E8F55970028EBEC /* LHOpenURLDemo */,
 				CECD835F1A412C0600973211 /* LHOpenURL */,
-				CECD83691A412C0700973211 /* LHOpenURLTests */,
+				6AF6B8A91F205A500054C471 /* LHOpenURLUnitTest */,
 				CECD835E1A412C0600973211 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CECD835D1A412C0600973211 /* libLHOpenURL.a */,
-				CECD83681A412C0700973211 /* LHOpenURLTests.xctest */,
+				6AF6B8A81F205A500054C471 /* LHOpenURLUnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,25 +127,27 @@
 			path = LHOpenURL;
 			sourceTree = "<group>";
 		};
-		CECD83691A412C0700973211 /* LHOpenURLTests */ = {
-			isa = PBXGroup;
-			children = (
-				CECD836A1A412C0700973211 /* Supporting Files */,
-			);
-			path = LHOpenURLTests;
-			sourceTree = "<group>";
-		};
-		CECD836A1A412C0700973211 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CECD836B1A412C0700973211 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6AF6B8A71F205A500054C471 /* LHOpenURLUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF6B8B01F205A500054C471 /* Build configuration list for PBXNativeTarget "LHOpenURLUnitTest" */;
+			buildPhases = (
+				6AF6B8A41F205A500054C471 /* Sources */,
+				6AF6B8A51F205A500054C471 /* Frameworks */,
+				6AF6B8A61F205A500054C471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AF6B8AF1F205A500054C471 /* PBXTargetDependency */,
+			);
+			name = LHOpenURLUnitTest;
+			productName = LHOpenURLUnitTest;
+			productReference = 6AF6B8A81F205A500054C471 /* LHOpenURLUnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CECD835C1A412C0600973211 /* LHOpenURL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECD836E1A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURL" */;
@@ -138,23 +165,6 @@
 			productReference = CECD835D1A412C0600973211 /* libLHOpenURL.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CECD83671A412C0700973211 /* LHOpenURLTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECD83711A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURLTests" */;
-			buildPhases = (
-				CECD83641A412C0700973211 /* Sources */,
-				CECD83651A412C0700973211 /* Frameworks */,
-				CECD83661A412C0700973211 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LHOpenURLTests;
-			productName = LHOpenURLTests;
-			productReference = CECD83681A412C0700973211 /* LHOpenURLTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +174,11 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = huji;
 				TargetAttributes = {
-					CECD835C1A412C0600973211 = {
-						CreatedOnToolsVersion = 6.0.1;
+					6AF6B8A71F205A500054C471 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
 					};
-					CECD83671A412C0700973211 = {
+					CECD835C1A412C0600973211 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -185,13 +196,13 @@
 			projectRoot = "";
 			targets = (
 				CECD835C1A412C0600973211 /* LHOpenURL */,
-				CECD83671A412C0700973211 /* LHOpenURLTests */,
+				6AF6B8A71F205A500054C471 /* LHOpenURLUnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CECD83661A412C0700973211 /* Resources */ = {
+		6AF6B8A61F205A500054C471 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,6 +212,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6AF6B8A41F205A500054C471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF6B8AB1F205A500054C471 /* LHOpenURLUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CECD83591A412C0600973211 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,16 +231,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECD83641A412C0700973211 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6AF6B8AF1F205A500054C471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CECD835C1A412C0600973211 /* LHOpenURL */;
+			targetProxy = 6AF6B8AE1F205A500054C471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6AF6B8B11F205A500054C471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LHOpenURLUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huji.LHOpenURLUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6AF6B8B21F205A500054C471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LHOpenURLUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huji.LHOpenURLUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CECD836C1A412C0700973211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,39 +374,17 @@
 			};
 			name = Release;
 		};
-		CECD83721A412C0700973211 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LHOpenURLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		CECD83731A412C0700973211 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LHOpenURLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6AF6B8B01F205A500054C471 /* Build configuration list for PBXNativeTarget "LHOpenURLUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF6B8B11F205A500054C471 /* Debug */,
+				6AF6B8B21F205A500054C471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CECD83581A412C0600973211 /* Build configuration list for PBXProject "LHOpenURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -361,15 +399,6 @@
 			buildConfigurations = (
 				CECD836F1A412C0700973211 /* Debug */,
 				CECD83701A412C0700973211 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CECD83711A412C0700973211 /* Build configuration list for PBXNativeTarget "LHOpenURLTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECD83721A412C0700973211 /* Debug */,
-				CECD83731A412C0700973211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
