@@ -126,6 +126,7 @@
     }
 }
 
+
 -(NSDictionary*)paramsFromQuery:(NSURL*)url{
     if (!url.query) {
         NSLog(@"url query invalid.");
@@ -134,48 +135,16 @@
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
-    NSString *dquery = [url.query stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSUInteger len = dquery.length;
+    NSArray *components = [url.query componentsSeparatedByString:@"&"];
     
-    int STA_KEY = 0;
-    int STA_V = 1;
-//    int STA_INQ = 2;
-    int state = STA_KEY;
-    
-    const int MAX_LEN = 10240;
-    unichar tmp[MAX_LEN];
-    int tmpindex=0;
-    
-    NSString *key = nil;
-    NSString *value = nil;
-    
-    for (int i=0; i<len; i++) {
-        unichar c = [dquery characterAtIndex:i];
-        if (state==STA_KEY&&c=='=') {
-            state = STA_V;
-            key = [NSString stringWithCharacters:tmp length:tmpindex];
-            tmpindex=0;
-            continue;
-        }else if (state==STA_V&&c=='&'){
-            state = STA_KEY;
-            
-            value = [NSString stringWithCharacters:tmp length:tmpindex];
-            tmpindex=0;
-            //put
-            [dict setObject:value forKey:key];
-            
-            continue;
-        }
-        if (state==STA_KEY) {
-            tmp[tmpindex]=c;
-            tmpindex++;
-        }else if (state==STA_V){
-            tmp[tmpindex]=c;
-            tmpindex++;
+    for (NSString *oneCom in components) {
+        if (oneCom.length > 0) {
+            NSArray *keyValue = [oneCom componentsSeparatedByString:@"="];
+            if (keyValue.count == 2) {
+                [dict setObject:keyValue[1] forKey:keyValue[0]];
+            }
         }
     }
-    
-    [dict setObject:[NSString stringWithCharacters:tmp length:tmpindex] forKey:key];
     
     return dict;
 }
